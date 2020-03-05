@@ -2,24 +2,19 @@ class Main{
 	public static void main(String arg[]){
 		//instantiate and attribute variables of type float, //
 		//double, boolean, String and char; and,//
-		float a = 33.45f;
+		int i = 3110;
 
-		double b = 100.2f;
-
+		float a = 2.0f;
+	
 		boolean c = true;
 
-		String d = "Runtao";
+		String d = "w0r1d";
 
-		char e = 'e';
+		char e = 'H';
+
+		System.out.println(Character.toString(e) + i + d + a + c);
 
 		//Print all the variables on the console;//
-
-		System.out.println(a);
-		System.out.println(b);
-		System.out.println(c);
-		System.out.println(d);
-		System.out.println(e);
-
-
+		//print H3110w0r1d2.0true//
 	}
 }
