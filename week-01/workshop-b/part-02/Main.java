@@ -16,5 +16,7 @@ class Main{
 
 		//Print all the variables on the console;//
 		//print H3110w0r1d2.0true//
+		//Print all the variables on the console;//
+		//print H3110w0r1d2.0true//
 	}
 }
