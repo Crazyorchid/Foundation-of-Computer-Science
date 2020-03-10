@@ -9,11 +9,11 @@ class Problem9{
         System.out.print("Enter the name of the dog: ");
         String name = input.nextLine();
         
-        System.out.print("Enter its age: ");
-        int age = input.nextInt();
-        
         System.out.print("Enter its favorite food: ");
         String food = input.nextLine();
+
+        System.out.print("Enter its age: ");
+        int age = input.nextInt();
         
         System.out.print("Enter its height in cm: ");
         double tall = input.nextDouble();

@@ -9,11 +9,11 @@ class Problem8{
         System.out.print("Enter your name: ");
         String name = input.nextLine();
         
-        System.out.print("Enter your age: ");
-        int age = input.nextInt();
-        
         System.out.print("Enter your favorite food: ");
         String food = input.nextLine();
+
+        System.out.print("Enter your age: ");
+        int age = input.nextInt();
         
         System.out.print("Enter your grade in math: ");
         double math = input.nextDouble();
