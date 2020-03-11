@@ -19,7 +19,7 @@ class Problem9{
         double tall = input.nextDouble();
         
         System.out.print("Enter its weight in kg: ");
-        double height = input.nextDouble();
+        double weight = input.nextDouble();
         
         System.out.print("What is its favorite toy: ");
         String toy = input.next();
