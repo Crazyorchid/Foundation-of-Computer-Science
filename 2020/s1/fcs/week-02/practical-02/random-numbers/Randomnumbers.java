@@ -8,7 +8,7 @@ public class Randomnumbers{
 
 			int sum = 0;
 
-		for (int i = 0; i < 10; i++){
+		for (int i = 0; i < 10; ++i){
 
 			int randnum = ran.nextInt(10);			
 		
