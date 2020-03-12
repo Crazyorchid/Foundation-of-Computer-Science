@@ -6,12 +6,24 @@ public class Randomnumbers{
 
 			Random ran = new Random();
 
+			int sum = 0;
+
 		for (int i = 0; i < 10; i++){
 
 			int randnum = ran.nextInt(10);			
 		
-			System.out.println("The random numbers are: " + randnum);
+			System.out.print(" , " + randnum );
+			sum = sum + randnum;
+
 		}
+		
+		System.out.println(" Sum = " + sum);
+
+		float mean = (float)sum/10;
+
+		System.out.println("The average of ten numbers is: " + mean);
+		
+
 		}
 			
 	}
