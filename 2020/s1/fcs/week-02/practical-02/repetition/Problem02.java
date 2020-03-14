@@ -1,5 +1,5 @@
 import java.util.*;
-public class Problem03{
+public class Problem02{
 	public static void main(String[]args){
 
 		Random ran = new Random();
