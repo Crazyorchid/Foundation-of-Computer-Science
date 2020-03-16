@@ -4,21 +4,32 @@ public class UserInterface{
 	public static void main(String[]args){
 		Scanner input = new Scanner(System.in);
 
-		System.out.println("Welcom dear user!");
-		
-		
+				
+				System.out.println("Welcom dear user!");
+				String option;
 
-			System.out.print("Please insert the first number: ");
-			double first = input.nextDouble();
-			System.out.print("Please insert the first number: ");
-			double second = input.nextDouble();
 
-			double sum = first + second;
+				do {
+				System.out.print("Please insert the first number: ");
+				float first = input.nextFloat();
+				System.out.print("Please insert the second number: ");
+				float second = input.nextFloat();
 
-			System.out.println(" Thank you for your enquiry, the sum between " + first + " and " + second + " is " + sum);
+				float sum = (float)first + second;
 
-			System.out.println("Woule you like to: ");
+				System.out.println("Thank you for your enquiry, the sum between " + first + " and " + second + " is " + sum);
+
+				System.out.println("Woule you like to: ");
+				System.out.println("a) sum again");
+				System.out.println("b) exit");
+				
+				System.out.print("options: ");
+				
+				option = input.next();
 			
-			//System.out.println("a) sum again");
-			//System.out.println("b) exit");
-
+			}while (option.equals("a") );
+				
+				System.out.println("Have a good day");
+			}
+   
+		}
