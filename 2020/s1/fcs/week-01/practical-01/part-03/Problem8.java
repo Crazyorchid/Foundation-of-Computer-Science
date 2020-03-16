@@ -1,10 +1,13 @@
+/* Student name: Runtao Zhuge Student ID:a1778478
+Problem 08*/
+//importing the scanner
 import java.util.Scanner;
 
 class Problem8{
     public static void main(String[]args){
-        
+        //Setting up a new scanner to take inputs
         Scanner input = new Scanner (System.in);
-        //name, age, favorite food, grade (in maths and English), height, weight and number of subject//
+        //Taking the input of name, age, favorite food, grade (in maths and English), height, weight and number of subject//
         
         System.out.print("Enter your name: ");
         String name = input.nextLine();

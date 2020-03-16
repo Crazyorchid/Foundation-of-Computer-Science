@@ -1,5 +1,11 @@
+/* Student name: Runtao Zhuge Student ID:a1778478
+Problem 10*/
 
-
+/* Re arranged the sequence of the codes,
+	Then the number of the varibales bscause all of the variables had the same name,
+	Then the messages that should be printed were listed in the right orders
+	*/
+	
 public class Problem10{
 	public static void main(String [] args){
 		
