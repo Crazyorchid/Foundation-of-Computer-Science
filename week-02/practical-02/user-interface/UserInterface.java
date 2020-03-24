@@ -5,7 +5,7 @@ public class UserInterface{
 		Scanner input = new Scanner(System.in);
 
 				
-				System.out.println("Welcom dear user!");
+				System.out.println("Welcome dear user!");
 				String option;
 
 
@@ -19,7 +19,7 @@ public class UserInterface{
 
 				System.out.println("Thank you for your enquiry, the sum between " + first + " and " + second + " is " + sum);
 
-				System.out.println("Woule you like to: ");
+				System.out.println("Would you like to: ");
 				System.out.println("a) sum again");
 				System.out.println("b) exit");
 				
