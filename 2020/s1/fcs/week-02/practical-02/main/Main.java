@@ -1,6 +1,6 @@
 //Student name: Runtao Zhuge
 //Student ID a1778478
-//Practical 03 
+//Practical 02 
 import java.util.Scanner;
 /*import the scanner*/
 
