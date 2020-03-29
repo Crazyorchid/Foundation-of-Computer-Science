@@ -10,7 +10,7 @@ public class Problem02 {
 			checkPrime(num);
 		}catch(Exception e) {
 			System.out.println("Please insert a positive proper whole number.");
-		}
+		}//catch to get exceptions executed
 
 	}
 	static void checkPrime(int n) {
@@ -18,10 +18,10 @@ public class Problem02 {
 		for (int i = 2; i <= n/2; ++i) {
 			if (n%i==0) {
 				flag = true;
-				break;
+				break;//starting from first to half of the number "n" and check if there is one number can be divided
 			}
 		}
-		if(!flag && n>=0)
+		if(!flag && n>=0)//if no, it is a prime number, if yes, it is prime
 			System.out.println("Your number is a prime number");
 		else {
 			System.out.println("Your number is not a prime number");

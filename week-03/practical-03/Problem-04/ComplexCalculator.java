@@ -7,7 +7,7 @@ public class ComplexCalculator {
 		this.imagine = i;
 
 }
-	public static ComplexCalculator add(ComplexCalculator c1, ComplexCalculator c2) {
+	public static ComplexCalculator add(ComplexCalculator c1, ComplexCalculator c2) {//method created and real & imagine number were created
 		ComplexCalculator num = new ComplexCalculator(0,0);
 		
 		num.real = c1.real + c2.real;
@@ -16,7 +16,7 @@ public class ComplexCalculator {
 		return num;
 		
 	}
-	
+	//using formula to create method for all 4 types of operations
 	public static ComplexCalculator multiplication(ComplexCalculator c1, ComplexCalculator c2) {
 		ComplexCalculator num = new ComplexCalculator(0,0);
 		
@@ -42,6 +42,7 @@ public class ComplexCalculator {
 		
 		return num;
 	}
+	//Put the methods in and make sure and type out the output.
 	
 	public static void main(String[]args) {
 		ComplexCalculator c1= new ComplexCalculator(10, 9);
