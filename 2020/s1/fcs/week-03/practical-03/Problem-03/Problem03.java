@@ -10,7 +10,7 @@ public class Problem03 {
 		compareNum(num1, num2);
 		}catch(Exception e) {
 			System.out.println("Please, try again");
-		}
+		}//use catch and try to make sure the right types of variables have been entered
 		
 	}
 	
