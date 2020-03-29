@@ -21,7 +21,7 @@ public class Problem02 {
 				break;//starting from first to half of the number "n" and check if there is one number can be divided
 			}
 		}
-		if(!flag && n>=0)//if no, it is a prime number, if yes, it is prime
+		if(!flag && n>0)//if no, it is a prime number, if yes, it is prime
 			System.out.println("Your number is a prime number");
 		else {
 			System.out.println("Your number is not a prime number");
