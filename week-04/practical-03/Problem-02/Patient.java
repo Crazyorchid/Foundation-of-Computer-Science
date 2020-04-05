@@ -1,3 +1,5 @@
+package problem2;
+
 public class Patient extends Person {
 	String diagnostic;
 	String inTime;
@@ -33,6 +35,11 @@ public class Patient extends Person {
 
 	public void setPrevTime(String prevTime) {
 		this.prevTime = prevTime;
+	}
+	void display(String diagnostic, String inTime, String prevTime) {
+		System.out.println("Diagnostic: " + diagnostic);
+		System.out.println("In time: "+ inTime);
+		System.out.println("Previouse time: " + prevTime);
 	}
 
 }

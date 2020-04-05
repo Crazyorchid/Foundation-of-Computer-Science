@@ -1,3 +1,4 @@
+package problem3;
 import java.util.Scanner;
 
 public class RectangleArea extends Rectangle {

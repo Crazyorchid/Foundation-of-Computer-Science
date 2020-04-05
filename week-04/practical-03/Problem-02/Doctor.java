@@ -1,3 +1,5 @@
+package problem2;
+
 public class Doctor extends Person {
 	String speciality;
 
@@ -13,5 +15,8 @@ public class Doctor extends Person {
 	}
 	Doctor(String speciality){
 		
+	}
+	void display() {
+		System.out.println("Speciality: " + this.speciality);
 	}
 }

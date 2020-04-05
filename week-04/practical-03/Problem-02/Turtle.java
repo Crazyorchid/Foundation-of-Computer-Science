@@ -1,3 +1,5 @@
+package problem2;
+
 public class Turtle extends Animal {
 
 	public Turtle() {
@@ -9,7 +11,7 @@ public class Turtle extends Animal {
 	}
 	
 	public void makeSound() {
-		System.out.println("Bibibibi!");
+		System.out.println("Turtle says: Bibibibi!");
 	}
 
 }

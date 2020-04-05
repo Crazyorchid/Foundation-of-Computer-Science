@@ -1,3 +1,5 @@
+package problem2;
+
 public class Rectangle extends Shape {
 	
 
