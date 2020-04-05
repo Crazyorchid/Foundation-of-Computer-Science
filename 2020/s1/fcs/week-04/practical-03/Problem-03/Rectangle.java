@@ -1,3 +1,5 @@
+package problem3;
+
 public class Rectangle extends Shape {
 	
 
@@ -7,12 +9,12 @@ public class Rectangle extends Shape {
 
 	public Rectangle(double width, double height, double radius, double length) {
 		super(width, height, radius, length);
-		this.setLength(length);
+		this.setLength(height);
 		this.setWidth(width);
 		
 	}
 	public double area(){
-		double area = this.length * this.width;
+		double area = this.height * this.width;
 		return area;
 	}
 

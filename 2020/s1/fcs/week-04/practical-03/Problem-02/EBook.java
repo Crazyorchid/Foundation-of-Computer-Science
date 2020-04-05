@@ -1,3 +1,5 @@
+package problem2;
+
 public class EBook extends Book {
 	String url;
 	
@@ -15,6 +17,9 @@ public class EBook extends Book {
 
 	public void setUrl(String url) {
 		this.url = url;
+	}
+	void displayUrl() {
+		System.out.println("URL: " + this.url);
 	}
 
 }
