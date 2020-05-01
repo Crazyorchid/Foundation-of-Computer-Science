@@ -11,9 +11,9 @@ public class Test {
 
     public static void main(String[] args) {
         countHandShakes count = new countHandShakes();
-        ShakingParty SP = new ShakingParty();
-        int N = SP.nPeople;
-        SP.display();
+        ShakingPartyConstrainted SPC = new ShakingPartyConstrainted();
+        int N = SPC.nCouple;
+        SPC.display();
 
     }
 }

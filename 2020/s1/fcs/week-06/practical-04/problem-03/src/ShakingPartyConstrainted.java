@@ -10,23 +10,25 @@ import java.util.Random;
 
 public class ShakingPartyConstrainted {
 
-    public class ShakingParty {
+    public int nCouple;
+
+
         int nPeople;
         int ShakingParty() {
             Random random = new Random();
             /*setting random obj and generate random numbers*/
 
-            int i = random.nextInt(1000);
+            int i = random.nextInt(10);
             //set i as the random number
             return i;
         }
 
         public int countHandShakes(int N) {
             //rules for handshakes
-            if (N == 0) {
+            if (N <= 1) {
                 return 0;
             } else {
-                return (N - 2) + countHandShakes(N - 2);
+                return (N - 2) + countHandShakes(N - 1);
                 //When only females can initiate the handshakes
                 /*They shake hands with all other people except for herself and her partner, so the function should be (N-2) for each of it and the next round it
                 lowers one number and keeps shaking hands with others except for their own partners*/
@@ -45,11 +47,10 @@ public class ShakingPartyConstrainted {
             return num;
 
         }
-        public void display(){
+        public void display() {
             int n = getnCouple();
             System.out.println("Number of people in the room: " + n*2);
-            System.out.println("Number of coupls in the room: " + n);
-            System.out.println("Number of hands shake in the room: " + countHandShakes(n));
-        }
+            System.out.println("Number of couple in the room: " + n);
+            System.out.println("Number of hands shake in the room: " + countHandShakes(n*2));
     }
 }
