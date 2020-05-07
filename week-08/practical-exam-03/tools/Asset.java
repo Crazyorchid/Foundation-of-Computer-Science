@@ -1,6 +1,6 @@
 public interface Asset {
-    static float getValue(){
+     public default float getValue(){
 
-        return 0;
+        return getValue();
     }
 }

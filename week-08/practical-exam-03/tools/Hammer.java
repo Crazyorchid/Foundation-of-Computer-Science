@@ -1,11 +1,12 @@
 public class Hammer extends HandTool {
     Hammer(float weight, float value, boolean sharp) {
-        super();
+        super(weight, value);
 
     }
 
-    public Hammer() {
-        super();
+    @Override
+    void useTool(int n, float price, int N, float v, String zssh) {
+        super.useTool(n, price, N, v, zssh);
     }
 
     void useTool(int N, float price, int i, String Y) {
@@ -22,3 +23,4 @@ public class Hammer extends HandTool {
         }
     }
 }
+
