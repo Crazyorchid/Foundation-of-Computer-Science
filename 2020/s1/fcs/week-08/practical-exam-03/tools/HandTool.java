@@ -1,5 +1,5 @@
 public abstract class HandTool extends Tool{
-    HandTool() {
+    HandTool(float weight, float value) {
         super(weight, value);
     }
 
@@ -25,6 +25,5 @@ public abstract class HandTool extends Tool{
             System.out.println(Y);
 
         }
-        useTool(N);
     }
 }
