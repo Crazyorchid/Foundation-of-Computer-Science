@@ -5,8 +5,8 @@ public class Hammer extends HandTool {
     }
 
     @Override
-    void useTool(int n, float price, int N, float v, String zssh) {
-        super.useTool(n, price, N, v, zssh);
+    void useTool(int n, float price, int N, float v, String Y) {
+        super.useTool(n, price, N, v, Y);
     }
 
     void useTool(int N, float price, int i, String Y) {

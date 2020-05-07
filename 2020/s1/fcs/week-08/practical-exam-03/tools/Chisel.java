@@ -1,6 +1,6 @@
 public class Chisel extends HandTool{
     Chisel(float weight, float value, boolean sharp) {
-        super();
+        super(weight, value);
     }
 
     @Override
