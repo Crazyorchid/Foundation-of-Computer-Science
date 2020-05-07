@@ -18,7 +18,7 @@ public abstract class Tool implements Asset {
         return weight;
     }
 
-     void useTool(int n, float price, int N, float v, String zssh) {
+     void useTool(int n) {
 
 
 
