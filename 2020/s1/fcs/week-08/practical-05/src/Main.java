@@ -40,7 +40,7 @@ public static void main(String[] args){
 
     //testing the findMaxVal
     System.out.println("\nTesting the findMaxVal() method..");
-    int testCaseArr4[] = {5, 19, 22, 9, 2, 23, 19, 7, 10};
+    int testCaseArr4[] = {5, 9, 10, 12, 22, 23, 19, 15, 13};
     int resultMaxIndex = findMaxVal(testCaseArr4);
     int expectedMaxIndex = 6;
     boolean status = test(resultMaxIndex, expectedMaxIndex);
