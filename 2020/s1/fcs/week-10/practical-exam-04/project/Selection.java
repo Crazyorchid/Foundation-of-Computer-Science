@@ -17,7 +17,7 @@ public class Selection extends Sort {
 	}
 
 	@Override
-	public int[] sortIntByIndex(int[] arr) {
+	public int[] sortIntByIndex(int[] arr) {      //..
 		int[]index = this.getIndex(arr.length);
 
 		for (int i = 0; i < arr.length; i++) {
