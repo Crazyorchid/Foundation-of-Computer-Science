@@ -3,3 +3,4 @@ Problem 1- Changes were made to the public int [] sortStringByIndex(String [] ar
 
 Problem 2- The method searchStaffByAge used BinarySearching according the the objective searching created earlier. Binary searching requires the array to be sorted first and then it can be searched. In Company.java, the method SortStaffByAge(); is called in SearchStaffByAge(); first, and then the binary searching can be conducted.
 
+Problem-3 The selection should be written and then the methods in Company.java were changed from insertion to selection.
