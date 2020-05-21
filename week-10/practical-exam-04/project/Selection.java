@@ -10,7 +10,7 @@
 * Problem 03
 */
 public class Selection extends Sort {
-	
+
 
 	@Override
 	public int[] sortIntByIndex(int[] arr) {      //..
