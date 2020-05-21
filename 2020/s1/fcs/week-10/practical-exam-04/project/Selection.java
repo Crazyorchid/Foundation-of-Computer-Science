@@ -10,11 +10,7 @@
 * Problem 03
 */
 public class Selection extends Sort {
-
-	@Override
-	public int[] sortInt(int[] arr) {
-		return new int[0];
-	}
+	
 
 	@Override
 	public int[] sortIntByIndex(int[] arr) {      //..
@@ -35,14 +31,19 @@ public class Selection extends Sort {
 		return index;
 	}
 
-		@Override
-		public String[] sortString (String[]arr){
-			return new String[0];
-		}
+	@Override
+	public int [] sortInt(int [] arr){
+		throw new java.lang.UnsupportedOperationException("Not implemented yet!");
+	}
 
 
 	@Override
-	public int[] sortStringByIndex(String[] arr) {
-		return new int[0];
+	public int [] sortStringByIndex(String [] arr){
+		throw new java.lang.UnsupportedOperationException("Not implemented yet!");
+	}
+
+	@Override
+	public String [] sortString(String [] arr){
+		throw new java.lang.UnsupportedOperationException("Not implemented yet!");
 	}
 }
