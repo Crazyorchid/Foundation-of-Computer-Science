@@ -39,6 +39,8 @@ public class Company{
 		// Searching setup
 		this.searching = new BinarySearch();
 		//this.searching = new LinearSearch();
+
+		//this.sorting = new Selection();
 	}
 
 	public void sortStaffByName(){
