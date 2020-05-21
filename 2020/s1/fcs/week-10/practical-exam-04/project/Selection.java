@@ -27,6 +27,9 @@ public class Selection extends Sort {
 			int temp = arr[min_idx];
 			arr[min_idx] = arr[i];
 			arr[i] = temp;
+			int tempindex = index[min_idx];
+			index[min_idx] = index[i];
+			index[i] = tempindex;
 
 		}
 		return index;
