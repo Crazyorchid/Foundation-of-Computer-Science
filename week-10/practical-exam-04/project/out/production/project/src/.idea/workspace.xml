@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c74213cb-cb21-490e-b68f-71aab24992c7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1cCqSaiagazIP9Elpk1PYap4mMa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c74213cb-cb21-490e-b68f-71aab24992c7" name="Default Changelist" comment="" />
+      <created>1590042923565</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590042923565</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="743" y="239" width="424" height="554" key="FileChooserDialogImpl" timestamp="1590042941635">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="743" y="239" width="424" height="554" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590042941635" />
+    <state x="598" y="267" width="713" height="498" key="NewModule_or_Project.wizard" timestamp="1590042954710">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="598" y="267" width="713" height="498" key="NewModule_or_Project.wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1590042954710" />
+  </component>
+</project>
