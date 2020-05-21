@@ -1,0 +1,2 @@
+Problem 1- In insertion.java, the override method was not implemented, and the overridden method was changed to be able to override and sort strings by converting strings to characters and compared to size of each of them.
+Problem 1- Changes were made to the public int [] sortStringByIndex(String [] arr), and the method was changed with compareTo to compare the Strings.
