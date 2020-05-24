@@ -1,4 +1,3 @@
-import java.util.Arrays;
 public class ServiceCenter {
     private WaitingList awl;
 
@@ -14,7 +13,7 @@ public class ServiceCenter {
      * @param location
      */
     public void addPatientIntoList(String name, String phoneNumber, int triageLevel, String location) {
-        Patient patient = new Patient();
+        Patient patient = new Patient(name, phoneNumber, triageLevel, location);
         if(this.awl.isInList(patient)){
             System.out.println(patient.getName() + " is in waiting list. ");
         }else{
@@ -30,24 +29,25 @@ public class ServiceCenter {
     public Patient assignAmbulanceForPatient() {
         // TODO: The tester report that the system will crash when waiting list is empty
         Patient patient = this.awl.popPatient();
-        if(this.awl == null){
+        if (patient == null) {
             System.out.println("Error! The waiting list is empty.");
-        }else {
+        } else {
             System.out.println("Assigned an ambulance for patient: " + patient.getName());
+
         }
         return patient;
     }
-    public Patient assignAmbulanceForPatientByID() {
-        Patient patient = this.awl.popPatient();
-        Patient pt = new Patient();
-        if(this.awl == null) {
-            System.out.println("Error! The waiting list is empty.");
-            // TODO: The tester report that the system will crash when waiting list is empty
-        }else {
-            System.out.println("Assigned an ambulance for patient: " + pt.getId());
+    public Patient assignAmbulanceForPatient(int id) {
+        // TODO: The tester report that the system will crash when waiting list is empty
+        Patient patient = this.awl.popPatient(id);
+        if(patient == null){
+            System.out.println("Can't find this patient");
+        }else{
+            System.out.println("Success ! An ambulance has assigned for patient " + patient.getId());
         }
         return patient;
     }
+
 
 
     /**

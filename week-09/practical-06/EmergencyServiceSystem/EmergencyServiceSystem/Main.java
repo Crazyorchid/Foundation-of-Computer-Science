@@ -60,10 +60,9 @@ public class Main {
         ans += ":: Options:                                                                  ::" + "\n";
         ans += ":: 1. Add Patient                                                            ::" + "\n";
         ans += ":: 2. Assign Ambulance For Patient                                           ::" + "\n";
-        ans += ":: 3. Print Waiting List                                                     ::" + "\n";
-        ans += ":: 4. Assign Ambulance For Patient By Id                                     ::" + "\n";
-        ans += ":: 5. Check Position By Id                                                   ::" + "\n";
-
+        ans += ":: 3. Assign Ambulance For Patient By Id                                     ::" + "\n";
+        ans += ":: 4. Check Position By Id                                                   ::" + "\n";
+        ans += ":: 5. Print Waiting List                                                     ::" + "\n";
         ans += ":: 0. Exit                                                                   ::" + "\n";
         ans += "===============================================================================" + "\n";
         System.out.println(ans);
@@ -73,7 +72,12 @@ public class Main {
         String ans = ":: Your option: ";
         System.out.println(ans);
         String _input = inputScan.nextLine();
-        int _option = Integer.parseInt(_input);
+        int _option=99;
+        try{
+            _option = Integer.parseInt(_input);
+        }catch(NumberFormatException e){
+            System.out.println("Please input the right number: ");
+        }
         for(int i = 0; i < optionsAvailable.length; i++)
             if(_option == optionsAvailable[i])
                 return _option;
@@ -118,6 +122,11 @@ public class Main {
                 String phoneNumber = getInput(inputScan, "Please enter the phoneNumber of patient: ");
                 String triageLevel = getInput(inputScan, "Please enter the triage level of patient: ");
                 String location = getInput(inputScan, "Please enter the location of patient: ");
+                try {
+                    serviceCenter.addPatientIntoList(name, phoneNumber, Integer.parseInt(triageLevel), location);
+                }catch(NumberFormatException e){
+                    System.out.println("The number of the Id is not right, please try again");
+                }
                 serviceCenter.addPatientIntoList(name, phoneNumber, Integer.parseInt(triageLevel), location);
                 waitInput(inputScan);
                 break;
@@ -129,24 +138,35 @@ public class Main {
                 break;
             case 3:
                 clearScreen();
-                printSubHeader("Waiting List");
+                printSubHeader("Assign Ambulance by ID");
+                try{
+                    serviceCenter.assignAmbulanceForPatient(Integer.parseInt(getInput(inputScan, "What is your ID")));
+                }catch(NumberFormatException e){
+                    System.out.println("Please type in the right number");
+                }
                 serviceCenter.printWaitingList();
                 waitInput(inputScan);
                 break;
             case 4:
+                WaitingList waitingList = new WaitingList();
                 clearScreen();
-                printSubHeader("Assign Ambulance For Patient By Id");
-                serviceCenter.assignAmbulanceForPatientByID();
+                printSubHeader("Check position by Id");
+                try{
+                    waitingList.checkPositionById(Integer.parseInt(getInput(inputScan, "What is your ID")));
+                }catch(NumberFormatException e){
+                    System.out.println("Please type in the right number");
+
+                }
+                System.out.println("There are "+ waitingList.checkPositionById(Integer.parseInt(String.valueOf(inputScan))) + " before patient " + inputScan);
                 waitInput(inputScan);
-                break;
+
             case 5:
-                Patient pt = new Patient();
-                int num = pt.getId();
                 clearScreen();
-                printSubHeader("Check Position By Id");
-                System.out.println(("There are " + (num-1) + " patients before patient" + id));
+                printSubHeader("Waiting List");
+                serviceCenter.printWaitingList();
                 waitInput(inputScan);
                 break;
+
             case 0:
                 exitMessage();
                 return false;
@@ -157,6 +177,7 @@ public class Main {
 
     public static void main(String[] args) {
         ServiceCenter serviceCenter = new ServiceCenter();
+        //WaitingList waitingList = new WaitingList();
         initializeSystem(serviceCenter);
         Scanner inputScan = new Scanner(System.in);
         int [] options = new int []{1,2,3,4,5,0};

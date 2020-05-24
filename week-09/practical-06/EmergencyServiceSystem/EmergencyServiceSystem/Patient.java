@@ -1,6 +1,5 @@
 public class Patient {
     private static int totalPatient;
-    protected Patient next;
     // The unique id for the patient
     private int id;
     // can be 1-5, from not urgent to resuscitation
@@ -9,7 +8,7 @@ public class Patient {
     private String name;
     private String location;
 
-    public Patient() {
+    public Patient(String name, String phoneNumber, int triageLevel, String location) {
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.triageLevel = triageLevel;
@@ -52,9 +51,5 @@ public class Patient {
 
     public int getId() {
         return this.id;
-    }
-
-    public static int getTotalPatient() {
-        return totalPatient;
     }
 }
