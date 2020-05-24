@@ -1,9 +1,8 @@
-public class Node extends Patient {
+public class Node {
     protected Node next;
     protected Patient patient;
 
     public Node(Patient patient) {
-        super();
         this.patient = patient;
         this.next = null;
     }
@@ -25,16 +24,7 @@ public class Node extends Patient {
     }
 
     public void printNode() {
-        // Check if it's empty
-        if(this.patient==null) {
-            System.out.println("Stack is empty.");
-        }else{
-                Patient tmp = this.patient;
-                while(tmp!=null){
-                    System.out.println(tmp.getName());
-                    tmp = tmp.next;
-            }
-            System.out.println();
-        }
+        //TODO: Implement this method
+        System.out.println(this.getPatient().getName());
     }
 }
