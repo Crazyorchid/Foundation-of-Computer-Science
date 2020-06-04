@@ -4,6 +4,10 @@ public class Node extends Student {
     public Node next;
 
     // Parameterizing the student as the basic constructor
+    public Node(){
+
+    	
+    }
     public Node(Student tmpStudent) {
         this.info = tmpStudent;
 
