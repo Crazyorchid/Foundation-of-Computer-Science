@@ -43,7 +43,7 @@ public class Queue {
         } else {
             Node tmp = this.back;
             while (tmp != null) {
-                System.out.print(tmp.name + tmp.age + tmp.period);
+                System.out.printf(tmp.getInfo().getName() + tmp.getInfo().getName() + tmp.getInfo().getName() + "in Hogwarts");
                 tmp = tmp.next;
             }
             System.out.println();
