@@ -40,12 +40,12 @@ public class Queue {
 
     public void displayQueue() {
         if (this.back == null) {
-            System.out.println("Queue is empty");
+            System.out.println(" ");
         } else {
             Node tmp = this.back;
             while (tmp != null) {
                 System.out.println(tmp.getInfo().getName() + " " + tmp.getInfo().getAge() + " years old" + " " + tmp.getInfo().getPeriod()+ "rd" + " " +"in Hogwarts");
-                tmp = tmp.next;
+                tmp = tmp.getNext();
             }
             System.out.println();
         }
