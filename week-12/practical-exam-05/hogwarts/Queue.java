@@ -25,7 +25,7 @@ public class Queue {
 
     public void dequeue() {
         if (this.back == null) {
-            System.out.println("queue is empty");
+            System.out.println(" ");
         } else if (this.back.getNext() == null) { // if have only one element in queue
             this.back = null;
         } else {
@@ -48,7 +48,7 @@ public class Queue {
             Node tmp = this.back;
             while (tmp != null) {
                 index++;
-                System.out.println("#" + index + " " + tmp.getInfo().getName() + " " + tmp.getInfo().getAge() + " years old" + " " + tmp.getInfo().getPeriod()+ "rd" + " " +"in Hogwarts;");
+                System.out.println("#" + index + " " + tmp.getInfo().getName() + " " + tmp.getInfo().getAge() + " years old" + " " + tmp.getInfo().getPeriod()+ "nd" + " " +"in Hogwarts;");
                 tmp = tmp.getNext();
             }
             System.out.println();
