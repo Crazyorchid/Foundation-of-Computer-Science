@@ -14,9 +14,9 @@ public class Queue {
     }
 
 
-    public void enqueue(Student tmpStudent) {
+    public void enqueue(Node tmpStudent) {
         tmpStudent.next = this.back;
-        this.back = (Node) tmpStudent;
+        this.back = tmpStudent;
 
     }
 
@@ -37,7 +37,7 @@ public class Queue {
 
     }
 
-    public void displayQuene() {
+    public void displayQueue() {
         if (this.back == null) {
             System.out.println("Queue is empty");
         } else {
@@ -47,7 +47,6 @@ public class Queue {
                 tmp = tmp.next;
             }
             System.out.println();
-
         }
     }
 }
