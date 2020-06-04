@@ -48,7 +48,7 @@ public class Queue {
             Node tmp = this.back;
             while (tmp != null) {
                 index++;
-                System.out.println("#" + index + tmp.getInfo().getName() + " " + tmp.getInfo().getAge() + " years old" + " " + tmp.getInfo().getPeriod()+ "rd" + " " +"in Hogwarts;");
+                System.out.println("#" + index + " " + tmp.getInfo().getName() + " " + tmp.getInfo().getAge() + " years old" + " " + tmp.getInfo().getPeriod()+ "rd" + " " +"in Hogwarts;");
                 tmp = tmp.getNext();
             }
             System.out.println();
