@@ -15,21 +15,22 @@ public class Queue {
 
 
     public void enqueue(Student tmpStudent) {
-        tmpStudent.next = this.back;
-        this.back = (Node)tmpStudent;
+        Node newNode = new Node(tmpStudent);
+        newNode.setNext(this.back);
+        this.back = newNode;
 
     }
 
     public void dequeue() {
         if (this.back == null) {
             System.out.println("queue is empty");
-        } else if (this.back.next == null) { // if have only one element in queue
+        } else if (this.back.getNext() == null) { // if have only one element in queue
             this.back = null;
         } else {
             Node tmp = this.back;
             // Traverse queue until we reach the second element
             while (tmp.next.next != null) {
-                tmp = tmp.next;
+                tmp = tmp.getNext();
             }
             // Remove first element
             tmp.next = null;
@@ -41,9 +42,9 @@ public class Queue {
         if (this.back == null) {
             System.out.println("Queue is empty");
         } else {
-            Student tmp = this.back;
+            Node tmp = this.back;
             while (tmp != null) {
-                System.out.print(tmp.getName() + tmp.getName() + tmp.getName() + "in Hogwarts");
+                System.out.println(tmp.getInfo().getName() + " " + tmp.getInfo().getAge() + " " + tmp.getInfo().getPeriod()+ "rd" + " " +"in Hogwarts");
                 tmp = tmp.next;
             }
             System.out.println();
