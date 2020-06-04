@@ -44,7 +44,7 @@ public class Queue {
         } else {
             Node tmp = this.back;
             while (tmp != null) {
-                System.out.println(tmp.getInfo().getName() + " " + tmp.getInfo().getAge() + " years old" + " " + tmp.getInfo().getPeriod()+ "rd" + " " +"in Hogwarts");
+                System.out.println(tmp.getInfo().getName() + " " + tmp.getInfo().getAge() + " years old" + " " + tmp.getInfo().getPeriod()+ "rd" + " " +"in Hogwarts;");
                 tmp = tmp.getNext();
             }
             System.out.println();
