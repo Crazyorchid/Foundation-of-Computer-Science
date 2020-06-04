@@ -14,9 +14,9 @@ public class Queue {
     }
 
 
-    public void enqueue(Node tmpStudent) {
+    public void enqueue(Student tmpStudent) {
         tmpStudent.next = this.back;
-        this.back = tmpStudent;
+        this.back = (Node)tmpStudent;
 
     }
 
@@ -41,9 +41,9 @@ public class Queue {
         if (this.back == null) {
             System.out.println("Queue is empty");
         } else {
-            Node tmp = this.back;
+            Student tmp = this.back;
             while (tmp != null) {
-                System.out.printf(tmp.getInfo().getName() + tmp.getInfo().getName() + tmp.getInfo().getName() + "in Hogwarts");
+                System.out.print(tmp.getName() + tmp.getName() + tmp.getName() + "in Hogwarts");
                 tmp = tmp.next;
             }
             System.out.println();
