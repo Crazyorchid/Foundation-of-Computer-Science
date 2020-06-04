@@ -1,3 +1,5 @@
+import javax.sound.midi.MidiUnavailableException;
+
 /*==================================
 Foundations of Computer Science
 Student: Runtao Zhuge
@@ -39,12 +41,14 @@ public class Queue {
     }
 
     public void displayQueue() {
+        int index = 0;
         if (this.back == null) {
             System.out.println(" ");
         } else {
             Node tmp = this.back;
             while (tmp != null) {
-                System.out.println(tmp.getInfo().getName() + " " + tmp.getInfo().getAge() + " years old" + " " + tmp.getInfo().getPeriod()+ "rd" + " " +"in Hogwarts;");
+                index++;
+                System.out.println("#" + index + tmp.getInfo().getName() + " " + tmp.getInfo().getAge() + " years old" + " " + tmp.getInfo().getPeriod()+ "rd" + " " +"in Hogwarts;");
                 tmp = tmp.getNext();
             }
             System.out.println();
