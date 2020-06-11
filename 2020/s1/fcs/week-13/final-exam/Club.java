@@ -8,29 +8,29 @@ Practical Exam Number: Final
 ===================================*/
 import java.util.Stack;
 
-public class Club extends Player{
+public class Club{
     Player member;
     Stack<Player> Members =new Stack<Player>();
 
-    Club(String name, int age, int numWins, int numPlayed) {
-        super(name, age, numWins, numPlayed);
-    }
+
 
     public void addMember(Player member){
         Members.push(member);
 
     }
 
-    public int removeMemberById(){
+    public boolean removeMemberById(){
         Members.pop();
-
-        return getId();
-
+        return true;
     }
 
     public String printMembers(){
         return toString();
 
+    }
+
+    public String getHighestRankedPlayer(){
+        return member;
     }
 
 }
