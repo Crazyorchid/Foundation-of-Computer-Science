@@ -1,8 +1,16 @@
+/*==================================
+Foundations of Computer Science
+Student: Runtao Zhuge
+id: a1778478
+Semester: 1
+Year: 2020
+Practical Exam Number: Final
+===================================*/
 public class Player extends Person {
-    int id = 0;
-    static int playerIndex = 0;
+    protected int id = 0; //attributes
     protected int numWins;
     protected int numPlayed;
+    static int playerIndex = 0;
 
     Player(String name, int age, int numWins, int numPlayed){
         super(name, age);
@@ -12,34 +20,39 @@ public class Player extends Person {
         this.id = playerIndex;
     }
 
-    public void win(){
+    public void win(){ //method win
         this.numWins++;
         this.numPlayed++;
     }
 
-    public void lose(){
+    public void lose() { //method lose
         this.numPlayed++;
     }
 
-    //    get player's ranking score.
     public int getRanking(){
         int rankingScore = 0;
-        if (this.numPlayed != 0){
-            rankingScore = Math.round(this.numPlayed*(this.numWins/this.numPlayed));
+        if (this.numPlayed == 0){
+            return rankingScore;
         }
-
-        return rankingScore;
+        else {
+            rankingScore = Math.round(this.numPlayed*(this.numWins/this.numPlayed));
+            return rankingScore;
+        }
     }
 
-    //    Assessor
+
     public int getId() {
         return id;
     }
 
     @Override
     public String toString() {
-        String result = super.toString() + " ID " + this.id + " Ranking: " + getRanking();
-        return result;
+        return "Person: " + getName() + " is age: " + getAge() + " Id: " + getId() + " Ranking: " + getRanking();
     }
+
+
+
+
 }
+
 
