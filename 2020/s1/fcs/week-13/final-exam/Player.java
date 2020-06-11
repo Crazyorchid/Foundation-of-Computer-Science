@@ -1,49 +1,45 @@
 public class Player extends Person {
-    private int id;
-    private int numWins;
-    private int numPlayed;
+    int id = 0;
+    static int playerIndex = 0;
+    protected int numWins;
+    protected int numPlayed;
 
-    public Player(String name, int age, int numWins, int numPlayed) {
-        super(age, name);
-        //this.id = id;
+    Player(String name, int age, int numWins, int numPlayed){
+        super(name, age);
         this.numWins = numWins;
         this.numPlayed = numPlayed;
+        playerIndex++;
+        this.id = playerIndex;
     }
+
     public void win(){
-        if (numWins>numPlayed){
-            throw new UnsupportedOperationException("Impossible to find the number");
-        }else {
-            System.out.println(numWins);
-        }
-
+        this.numWins++;
+        this.numPlayed++;
     }
+
     public void lose(){
-        if (numWins>numPlayed) {
-            throw new UnsupportedOperationException("Impossible to find the number");
-        }else {
-            System.out.println(numPlayed - numWins);
-        }
+        this.numPlayed++;
     }
 
-
-
+    //    get player's ranking score.
     public int getRanking(){
-        if (numPlayed == 0){
-            return 0;
-        }
-        else {
-            return numPlayed * (numWins / numPlayed);
+        int rankingScore = 0;
+        if (this.numPlayed != 0){
+            rankingScore = Math.round(this.numPlayed*(this.numWins/this.numPlayed));
         }
 
-
-
+        return rankingScore;
     }
+
+    //    Assessor
     public int getId() {
         return id;
     }
 
     @Override
     public String toString() {
-        return "Person: " + getName() + " is age:" + getAge() + " Id: " + id + " Ranking:" + getRanking();
+        String result = super.toString() + " ID " + this.id + " Ranking: " + getRanking();
+        return result;
     }
 }
+
