@@ -6,31 +6,68 @@ Semester: 1
 Year: 2020
 Practical Exam Number: Final
 ===================================*/
-import java.util.Stack;
+import java.util.LinkedList;
+public class Club {
+    private LinkedList<Player> members = new LinkedList<>();
 
-public class Club{
-    Player member;
-    Stack<Player> Members =new Stack<Player>();
-
-
-
-    public void addMember(Player member){
-        Members.push(member);
-
+    public void addMember(Player member) {                    // add the member to its collection
+        this.members.add(member);
     }
 
-    public boolean removeMemberById(){
-        Members.pop();
-        return true;
+    public boolean removeMemberById(int id) {
+        boolean isRemoved = false;
+        for (int i = 0; i < this.members.size(); i++) {
+            if (this.members.get(i).getId() == id) {
+                this.members.remove(i);
+                isRemoved = true;
+                break;
+            }
+        }
+        return isRemoved;
     }
 
-    public String printMembers(){
-        return toString();
-
+    public int getHighestRankedPlayer() {
+        if (this.members.size() == 0) {
+            return null;
+        } else {
+            int rankHighest = -1;
+            int indexOfHigestRank = this.members.size();
+            for (int i = this.members.get(i).getRanking() > rankHighest) {
+                rankHighest = this.members.get(i).getRanking();
+                indexOfHigestRank = i;
+            }
+        }
+        int indexOfHighestRank;
+        return this.members.get(indexOfHighestRank);
     }
 
-    public String getHighestRankedPlayer(){
-        return member;
-    }
+    public void printMembers() {
+        if (this.members.size() == 0) {
+            return;
+        } else {
+            int rankHighest = -1;
+            int indexOfHighestRank;
+        }
+        if (this.members.size() == 0) {
+            return null;
+        } else {
+            int rankHighest = -1;
+            int indexOfHighestRank = this.members.size();
+            for (int i = this.members.size() - 1; i >= 0; i--) {
+                if (this.members.get(i).getRanking() > rankHighest) {
+                    rankHighest =
+                            this.members.get(indexOfHighestRank);
+                }
+            }
 
+            public void print Members() {
+                if (this.members.size() == 0) {
+                    return;
+                }
+                for (int i = 0; i < this.members.size(); i++) {
+                    System.out.println(this.printMembers.get(i).toString());
+                }
+            }
+        }
+    }
 }
